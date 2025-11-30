@@ -96,20 +96,20 @@ The application automatically handles database and table creation:
 ```bash
 python StudentManagementSystem.py
 ```
-3. The initial prompt will ask for your MySQL Root Password.
-4. Enter the password, and the system will automatically create the `SDBMS` database and the required tables (`DATA`, `SUBJECTS`, `MARKS`).
+2. The initial prompt will ask for your MySQL Root Password.
+3. Enter the password, and the system will automatically create the `SDBMS` database and the required tables (`DATA`, `SUBJECTS`, `MARKS`).
 
 ## 📂 Directory Structure
 
 ```bash
 Student-Management-System/
 ├── assets/
-│   ├── logo_dps.png       # School Logo asset
-│   ├── dl.png             # Icon/decoration asset
-│   └── users.json         # User credentials file (auto-generated)
-├── screenshots/           # Images used in this README
+│   ├── logo_dps.png            # School Logo asset
+│   ├── dl.png                  # Icon/decoration asset
+│   └── users.json              # User credentials file (auto-generated)
+├── screenshots/                # Images used in this README
 ├── StudentManagementSystem.py  # Main Source Code
-└── README.md              # Project Documentation
+└── README.md                   # Project Documentation
 ```
 
 ## 👨‍💻 Author

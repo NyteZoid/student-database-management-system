@@ -101,6 +101,7 @@ python StudentManagementSystem.py
 
 ## 📂 Directory Structure
 
+```bash
 Student-Management-System/
 ├── assets/
 │   ├── logo_dps.png       # School Logo asset
@@ -109,6 +110,7 @@ Student-Management-System/
 ├── screenshots/           # Images used in this README
 ├── StudentManagementSystem.py  # Main Source Code
 └── README.md              # Project Documentation
+```
 
 ## 👨‍💻 Author
 
@@ -116,4 +118,4 @@ Abhiraj Mandal
 * Class 12 Computer Science student
 * Delhi Public School, Prayagraj
 
-Feel free to connect on https://www.linkedin.com/in/abhirajmandal/ to review this project!
+Feel free to connect on https://www.linkedin.com/in/abhirajmandal/ and review this project!

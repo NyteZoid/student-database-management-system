@@ -75,5 +75,45 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/student-management-system.git](https://github.com/your-username/student-management-system.git)
+git clone [https://github.com/NyteZoid/student-database-management-system.git](https://github.com/NyteZoid/student-database-management-system.git)
 cd student-management-system
+```
+
+### 2. Install Dependencies
+Run the following command to install all necessary Python libraries:
+```bash
+pip install mysql-connector-python pillow matplotlib numpy scikit-learn reportlab
+```
+
+### 3. Setup Assets
+Ensure your directory includes the necessary `assets` folder:
+* The `assets` folder must contain your required images (`logo_dps.png`, `dl.png`).
+* The `users.json` file (which stores hashed user credentials) is created automatically upon the first user registration if it doesn't exist.
+
+### 4. Database Configuration
+The application automatically handles database and table creation:
+1. Run the application.
+```bash
+python StudentManagementSystem.py
+```
+3. The initial prompt will ask for your MySQL Root Password.
+4. Enter the password, and the system will automatically create the SDBMS database and the required tables (DATA, SUBJECTS, MARKS).
+
+## 📂 Directory Structure
+
+Student-Management-System/
+├── assets/
+│   ├── logo_dps.png       # School Logo asset
+│   ├── dl.png             # Icon/decoration asset
+│   └── users.json         # User credentials file (auto-generated)
+├── screenshots/           # Images used in this README
+├── StudentManagementSystem.py  # Main Source Code
+└── README.md              # Project Documentation
+
+## 👨‍💻 Author
+
+Abhiraj Mandal
+* Class 12 Computer Science student
+* Delhi Public School, Prayagraj
+
+Feel free to connect on https://www.linkedin.com/in/abhirajmandal/ to review this project!

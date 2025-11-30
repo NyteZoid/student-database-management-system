@@ -90,7 +90,7 @@ Ensure your directory includes the necessary `assets` folder:
 * The `assets` folder must contain your required images (`logo_dps.png`, `dl.png`).
 * The `users.json` file (which stores hashed user credentials) is created automatically upon the first user registration if it doesn't exist.
 
-### 4. Database Configuration
+### 4. Run the Application
 The application automatically handles database and table creation:
 1. Run the application.
 ```bash

@@ -1,4 +1,4 @@
-# Student Management System (SDBMS)
+# Student Database Management System (SDBMS)
 
 A comprehensive GUI-based application designed to manage student data, academic records, and performance analysis. Built using Python and MySQL, this system streamlines administrative tasks and provides advanced analytical features like marks prediction and report card generation.
 

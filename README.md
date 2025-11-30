@@ -6,16 +6,6 @@ A comprehensive GUI-based application designed to manage student data, academic 
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql)
 ![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green?style=for-the-badge)
 
-## 📋 Table of Contents
-- [About the Project](#about-the-project)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Screenshots](#screenshots)
-- [Installation & Setup](#installation--setup)
-- [Directory Structure](#directory-structure)
-- [Future Improvements](#future-improvements)
-- [Author](#author)
-
 ## 📖 About the Project
 This project was developed as a Computer Science Class 12 project. It aims to digitize the manual process of handling student records. Unlike standard management systems, this application integrates **Machine Learning (Linear Regression)** to predict future student performance based on past exam trends and visualizes data using dynamic graphs.
 

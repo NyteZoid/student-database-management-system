@@ -100,6 +100,7 @@ Student-Management-System/
 ├── screenshots/                # Images used in this README
 ├── StudentManagementSystem.py  # Main Source Code
 └── README.md                   # Project Documentation
+└── LICENSE                     # MIT License
 ```
 
 ## 👨‍💻 Author

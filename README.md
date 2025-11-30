@@ -97,7 +97,7 @@ The application automatically handles database and table creation:
 python StudentManagementSystem.py
 ```
 3. The initial prompt will ask for your MySQL Root Password.
-4. Enter the password, and the system will automatically create the SDBMS database and the required tables (DATA, SUBJECTS, MARKS).
+4. Enter the password, and the system will automatically create the `SDBMS` database and the required tables (`DATA`, `SUBJECTS`, `MARKS`).
 
 ## 📂 Directory Structure
 

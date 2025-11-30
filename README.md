@@ -99,7 +99,7 @@ Student-Management-System/
 │   └── users.json              # User credentials file (auto-generated)
 ├── screenshots/                # Images used in this README
 ├── StudentManagementSystem.py  # Main Source Code
-└── README.md                   # Project Documentation
+├── README.md                   # Project Documentation
 └── LICENSE                     # MIT License
 ```
 

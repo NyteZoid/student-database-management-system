@@ -414,10 +414,11 @@ def NewForm():
     try:
         #get the max roll number to assign next roll number
         cur.execute("SELECT max(roll) FROM DATA")          
-        result = cur.fetchone()          
+        result = cur.fetchone()  
+        nextroll = result[0] + 1         
     except:
-        result = (100,)
-    nextroll = result[0] + 1          
+        nextroll = 101
+             
 
     #set roll number variable to next roll number
     rn = tk.StringVar(value = str(nextroll))          
@@ -852,41 +853,46 @@ def ExamSubjectsForm():
         if rn.get() == "" or s1.get() == "" or s2.get() == "" or s3.get() == "" or s4.get() == "" or s5.get() == "":          
             messagebox.showinfo("Failed", "Please fill all fields")
         else:
-            cur.execute("SELECT roll FROM DATA;")
-            L = cur.fetchall()          
-            H = []
-            for x in L:
-                #create list of existing roll numbers
-                H.append(str(x[0]))    
-            #check if roll number exists     
-            if rn.get() in H:
-                cur.execute("SELECT * FROM SUBJECTS WHERE roll = %s;", (int(rn.get()),))
-                exist = cur.fetchone()
-                if exist:
-                    messagebox.showinfo("Failed", "Subjects already assigned for this student")
-                    rn.set('')
-                    s1.set('')
-                    s2.set('')
-                    s3.set('')
-                    s4.set('')
-                    s5.set('')
-                else:
-                    roll = int(rn.get())
-                    subject1 = s1.get()
-                    subject2 = s2.get()
-                    subject3 = s3.get()
-                    subject4 = s4.get()
-                    subject5 = s5.get()
-                    sql = "INSERT INTO SUBJECTS VALUES(%s,%s,%s,%s,%s,%s);"          
-                    data = (roll,subject1,subject2,subject3,subject4,subject5)
-                    #insert new record into database
-                    cur.execute(sql,data)          
-                    myconn.commit()
-                    messagebox.showinfo("Success","Subjects assigned")
-                    ESub.destroy()
-                    ExamMenuForm()
+            #check for duplicate subjects
+            selected = [s1.get(), s2.get(), s3.get(), s4.get(), s5.get()]
+            if len(selected) != len(set(selected)):
+                messagebox.showinfo("Failed", "Each subject must be unique. Please select different subjects.")
             else:
-                messagebox.showinfo("Failed", "Invalid Roll Number")
+                cur.execute("SELECT roll FROM DATA;")
+                L = cur.fetchall()          
+                H = []
+                for x in L:
+                    #create list of existing roll numbers
+                    H.append(str(x[0]))    
+                #check if roll number exists     
+                if rn.get() in H:
+                    cur.execute("SELECT * FROM SUBJECTS WHERE roll = %s;", (int(rn.get()),))
+                    exist = cur.fetchone()
+                    if exist:
+                        messagebox.showinfo("Failed", "Subjects already assigned for this student")
+                        rn.set('')
+                        s1.set('')
+                        s2.set('')
+                        s3.set('')
+                        s4.set('')
+                        s5.set('')
+                    else:
+                        roll = int(rn.get())
+                        subject1 = s1.get()
+                        subject2 = s2.get()
+                        subject3 = s3.get()
+                        subject4 = s4.get()
+                        subject5 = s5.get()
+                        sql = "INSERT INTO SUBJECTS VALUES(%s,%s,%s,%s,%s,%s);"          
+                        data = (roll,subject1,subject2,subject3,subject4,subject5)
+                        #insert new record into database
+                        cur.execute(sql,data)          
+                        myconn.commit()
+                        messagebox.showinfo("Success","Subjects assigned")
+                        ESub.destroy()
+                        ExamMenuForm()
+                else:
+                    messagebox.showinfo("Failed", "Invalid Roll Number")
     tk.Button(ESub, text = "Enter", command = VALIDATE, border = 3, font = ("bahnschrift semibold", 15), bg = "gray67", fg = "black", padx = 15).place(x=325, y=420)
 
     ESub.bind('<Return>', lambda event: VALIDATE())

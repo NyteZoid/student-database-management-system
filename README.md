@@ -66,7 +66,7 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/NyteZoid/student-database-management-system.git](https://github.com/NyteZoid/student-database-management-system.git)
-cd student-management-system
+cd student-database-management-system
 ```
 
 ### 2. Install Dependencies

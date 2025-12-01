@@ -24,7 +24,7 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 
 ### 3. Examination Management
 * **Assign Subjects**: Map specific subjects to students.
-* **Marks Entry**: Input marks for different exam terms (Half Yearly, Final).
+* **Marks Entry**: Input marks for different exam terms (Half Yearly, Final Exam).
 * **Data Validation**: Ensures marks are within valid ranges (0-100).
 
 ### 4. Analytics & Reporting (Advanced)
@@ -65,22 +65,26 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/NyteZoid/student-database-management-system.git](https://github.com/NyteZoid/student-database-management-system.git)
+git clone https://github.com/NyteZoid/student-database-management-system.git
+```
+
+### 2. Enter Clone Directory
+```bash
 cd student-database-management-system
 ```
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 Run the following command to install all necessary Python libraries:
 ```bash
 pip install mysql-connector-python pillow matplotlib numpy scikit-learn reportlab
 ```
 
-### 3. Setup Assets
+### 4. Setup Assets
 Ensure your directory includes the necessary `assets` folder:
 * The `assets` folder must contain your required images (`logo_dps.png`, `dl.png`).
 * The `users.json` file (which stores hashed user credentials) is created automatically upon the first user registration if it doesn't exist.
 
-### 4. Run the Application
+### 5. Run the Application
 The application automatically handles database and table creation:
 1. Run the application.
 ```bash

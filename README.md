@@ -41,9 +41,9 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 
 ## 📸 Screenshots
 
-| Login Screen | Student Menu |
+| Startup Window | Student Menu |
 |:---:|:---:|
-| ![Login](screenshots/login.png) | ![Menu](screenshots/student_menu.png) |
+| ![Login](screenshots/startup.png) | ![Menu](screenshots/student_menu.png) |
 
 | Data Visualization | Performance Prediction |
 |:---:|:---:|

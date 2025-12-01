@@ -92,7 +92,7 @@ python StudentManagementSystem.py
 ## 📂 Directory Structure
 
 ```bash
-Student-Management-System/
+student-database-management-system/
 ├── assets/
 │   ├── logo_dps.png            # School Logo asset
 │   ├── dl.png                  # Icon/decoration asset

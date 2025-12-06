@@ -95,12 +95,13 @@ python StudentManagementSystem.py
 student-database-management-system/
 ├── assets/
 │   ├── logo_dps.png            # School Logo asset
-│   ├── dl.png                  # Icon/decoration asset
-│   └── users.json              # User credentials file (auto-generated)
+│   ├── dl.png                  # Icon asset
+│   └── users.json              # User credentials file 
 ├── screenshots/                # Images used in this README
 ├── StudentManagementSystem.py  # Main Source Code
 ├── README.md                   # Project Documentation
-└── LICENSE                     # MIT License
+├── LICENSE                     # MIT License
+└── ProjectReport.pdf           # Documentation
 ```
 
 ## 👨‍💻 Author

@@ -5,7 +5,7 @@ A comprehensive GUI-based application designed to manage student data, academic 
 ## 📖 About the Project
 This project was developed as a Computer Science Class 12 project. It aims to digitize the manual process of handling student records. Unlike standard management systems, this application integrates **Machine Learning (Linear Regression)** to predict future student performance based on past exam trends and visualizes data using dynamic graphs.
 
-## ✨ Key Features
+## Key Features
 
 ### 1. User Authentication & Security
 * Secure **Login/Register** system.
@@ -28,7 +28,7 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 * **Marks Prediction**: Uses `Scikit-Learn` (Linear Regression) to predict future marks based on previous performance trends.
 * **Report Card Generation**: Generates a downloadable **PDF Report Card** using `ReportLab`.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Python
 * **Database:** MySQL
@@ -39,7 +39,7 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 * **Image Handling:** Pillow (PIL)
 * **Security:** Hashlib
 
-## 📸 Screenshots
+## Screenshots
 
 | Startup Window | Student Menu |
 |:---:|:---:|
@@ -53,7 +53,7 @@ This project was developed as a Computer Science Class 12 project. It aims to di
 |:---:|
 | ![Report](screenshots/report_card.png) |
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 * Python 3.x installed.
@@ -89,7 +89,7 @@ python StudentManagementSystem.py
 2. The initial prompt will ask for your MySQL Root Password.
 3. Enter the password, and the system will automatically create the `SDBMS` database and the required tables (`DATA`, `SUBJECTS`, `MARKS`).
 
-## 📂 Directory Structure
+## Directory Structure
 
 ```bash
 student-database-management-system/
@@ -104,7 +104,7 @@ student-database-management-system/
 └── ProjectReport.pdf           # Documentation
 ```
 
-## 👨‍💻 Author
+## Author
 
 Abhiraj Mandal
 * Class 12 Computer Science student
